@@ -168,6 +168,10 @@ header{
     box-shadow:3px 3px 1px rgb(0, 255, 0) ;
     border-top: 0;
 }
+.product-section a{
+    color: rgb(3, 253, 3) !important;
+    border: 2px solid rgb(3, 243, 3) !important;
+}
 .accordion{
     margin: 5% 10%;
     border-radius: 20px;
