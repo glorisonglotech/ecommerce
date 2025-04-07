@@ -161,6 +161,14 @@ header{
 }
 
 
+.accordion{
+    margin: 5% 10%;
+    border-radius: 20px;
+}
+.accordion-button{
+    background-color: rgba(9, 253, 9, 0.76);
+    color: white;
+}
 .footer{
     margin: 0 10%;
 }
