@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&family=Wallpoet&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+:root{
+    --text-color:white;
+    --links:blue;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    color: var(--links);
+    text-decoration: none;
+}
+header{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(2, 255, 2, 0.527)), url("images/bg3.jpeg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    width: 100%;
+    background-color: var(--text-color);
+   padding: 1% 5%;
+}
+.dropdown-menu:last-child{
+    margin-right: 4%;
+}
+.navbar-brand{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: monospace;
+}
+.navbar-brand span{
+    font-style: italic;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(0, 255, 0);
+}
+.hero{
+    margin: 15% 20%;
+    color: white;
+}
+.hero h2{
+    font-size: 3.5rem;
+    font-style: italic;
+    font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+
+}
+.hero .btns{
+    margin: 10% 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.hero .btns a{
+    padding: 10px 20px;
+    color: white;
+    border: 2px solid rgb(4, 255, 4);
+    border-radius: 5px;
+    position: relative;
+}
+.hero .btns a span{
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: rgba(1, 255, 1, 0.363);
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+    z-index: -1;
+    transition: 0.5s ease;
+}
+.hero .btns a:hover span{
+   width: 100%;
+}
+.hero-sections{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    place-items: center;
+    gap: 30px;
+}
+.hero-sections div{
+    padding: 10px 20px;
+}
+.best-selling-products{
+    margin: 5% 4%;
+}
+.best-selling-products-title{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.best-selling-products-title a{
+    background-color: rgb(10, 255, 10);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+   
+}
+.products{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.product-item{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding: 10px 20px;
+    /* border: 2px solid rgb(0, 255, 0); */
+    border-radius: 10px;
+    margin: 10% 20%;
+    box-shadow: 3px 3px 1px rgb(0, 255, 0);
+}
+.product-image{
+    height: 150px;
+    width: 150px;
+}
+.price-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price-section .no-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.price-section .no-item button{
+    background-color: transparent;
+    color: rgb(0, 255, 0);
+    padding: 5px 10px;
+    outline: none;
+    border: 0;
+    font-size: 2rem;
+}
+.product-item-btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-item-btns a{
+    padding: 5px;
+    border-radius: 10px;
+
+}
+.product-item-btns a:first-child{
+    color: rgb(1, 255, 1);
+    border: 2px solid rgb(2, 255, 2);
+}
+.product-item-btns a:last-child{
+    background-color: rgb(3, 250, 3);
+    color: white;
+}
+
+
+.footer{
+    margin: 0 10%;
+}
+.subscribe-btn{
+    background-color: rgb(0, 255, 0);
+    color: white;
+}
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+    .navbar-brand {
+        font-size: 0.8rem;
+    }
+    .navbar-brand span {
+        font-size: 1.2rem;
+    }
+    .hero .btns {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero .btns a {
+        width: 100%;
+        text-align: center;
+    }
+    .hero {
+        margin: 10% 5%;
+        text-align: center;
+    }
+    .hero-sections {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .navbar {
+        padding: 2% 3%;
+    }
+    .products{
+        display: flex;
+        flex-direction: column;
+        margin: 0 ;
+    }
+}
+
+@media (max-width: 574px) {
+    .hero-sections {
+        display: flex;
+        flex-direction: column;
+    }
+}
